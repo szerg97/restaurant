@@ -1,0 +1,5 @@
+server:
+  port: 8080
+
+warehouse:
+  url: ${WAREHOUSE_URL:localhost}

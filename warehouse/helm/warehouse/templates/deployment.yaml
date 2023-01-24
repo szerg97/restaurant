@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: warehouse-app
+spec:
+  selector:
+    matchLabels:
+      app: warehouse-app
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: warehouse-app
+    spec:
+      containers:
+        - name: "warehouse"
+          image: "szalaigeri/warehouse:1.0.0"
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8081
