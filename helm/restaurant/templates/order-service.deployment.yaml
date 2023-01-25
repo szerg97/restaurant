@@ -6,7 +6,7 @@ spec:
   selector:
     matchLabels:
       app: order-service-app
-  replicas: 1
+  replicas: 2
   template:
     metadata:
       labels:
@@ -22,4 +22,4 @@ spec:
             - name: WAREHOUSE_URL
               value: {{ .Values.warehouse.url }}
             - name: LOGGING_ENABLED
-              value: {{ .Values.logging.enabled | quote }}
+              value: {{ .Values.orderService.logging.enabled | quote }}

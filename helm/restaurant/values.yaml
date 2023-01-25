@@ -1,4 +1,6 @@
 warehouse:
   url: warehouse-service-internal
-logging:
-  enabled: false
+
+orderService:
+  logging:
+    enabled: false

@@ -3,3 +3,6 @@ server:
 
 warehouse:
   url: ${WAREHOUSE_URL:localhost}
+
+logging:
+  enabled: ${LOGGING_ENABLED:true}
