@@ -7,3 +7,4 @@ orderService:
 
 data:
   url: jdbc:postgresql://postgres:5432/warehouse
+  enabled: true

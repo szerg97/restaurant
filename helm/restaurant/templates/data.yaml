@@ -1,3 +1,4 @@
+{{ if eq (.Values.data.enabled) true }}
 apiVersion: v1
 kind: ConfigMap
 metadata:
@@ -82,3 +83,4 @@ spec:
     - port: 5432 # Sets port to run the postgres application
   selector:
     app: postgres
+{{ end }}

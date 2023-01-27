@@ -35,3 +35,5 @@ spec:
           env:
             - name: DATASOURCE_URL
               value: {{ .Values.data.url }}
+            - name: DATASOURCE_ENABLED
+              value: {{ .Values.data.enabled | quote }}

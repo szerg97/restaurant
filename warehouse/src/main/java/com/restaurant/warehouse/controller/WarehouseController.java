@@ -2,7 +2,6 @@ package com.restaurant.warehouse.controller;
 
 import com.restaurant.warehouse.model.Food;
 import com.restaurant.warehouse.repository.FoodRepository;
-import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -15,7 +14,7 @@ import java.util.List;
 @RequestMapping("/api/v1/warehouse")
 public class WarehouseController {
 
-    @Autowired
+    @Autowired(required = false)
     private FoodRepository repository;
 
     @Value("${spring.datasource.url}")
