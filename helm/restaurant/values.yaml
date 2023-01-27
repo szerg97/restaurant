@@ -4,3 +4,6 @@ warehouse:
 orderService:
   logging:
     enabled: false
+
+data:
+  url: jdbc:postgresql://postgres:5432/warehouse
