@@ -3,7 +3,7 @@ warehouse:
 
 orderService:
   logging:
-    enabled: false
+    enabled: true
 
 data:
   url: jdbc:postgresql://postgres:5432/warehouse

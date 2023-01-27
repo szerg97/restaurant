@@ -1,4 +1,0 @@
-warehouse:
-  url: warehouse-service-internal
-logging:
-  enabled: false
